@@ -5,11 +5,16 @@ from test import tfidf,model
 
 app = Flask(__name__)
 
+
 @app.route("/",methods=['POST'])
 def hello_world():
     json_data=request.get_json()
     print(json_data)
     return "<p>This is flask rest api</p>"
+
+@app.route("/hello",methods=['GET'])
+def func():
+    return "<p>hi bro</p>"
 
 @app.route("/detect_spam/",methods=['POST'])
 def detect_spam():
