@@ -4,4 +4,4 @@ gunicorn
 nltk
 gensim
 scikit-learn
-scipy
+scipy==1.8.0

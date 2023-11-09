@@ -43,5 +43,6 @@ def detect_spam():
  
 
 if __name__=="__main__":
-    app.run(debug=True) 
-    #app.run(debug=False,host="0.0.0.0")
+    
+    3app.run(debug=True) 
+    app.run(debug=False,host="0.0.0.0")
