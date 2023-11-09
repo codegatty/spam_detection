@@ -3,4 +3,4 @@ flask
 gunicorn
 nltk
 gensim
-sklearn
+scikit-learn
