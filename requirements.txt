@@ -1,3 +1,6 @@
 flask
 gunicorn
 nltk
+pickle
+gensim
+sklearn

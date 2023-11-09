@@ -1,7 +1,7 @@
 from flask import Flask,request
 import pickle
 from text_transformer import  text_transformer
-from test import tfidf,model
+from test import tfidf,modelpi
 
 app = Flask(__name__)
 
