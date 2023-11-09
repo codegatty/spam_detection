@@ -1,7 +1,7 @@
 from flask import Flask,request
 import pickle
 from text_transformer import  text_transformer
-from test import tfidf,modelpi
+from test import tfidf,model
 
 app = Flask(__name__)
 
@@ -43,5 +43,5 @@ def detect_spam():
  
 
 if __name__=="__main__":
-    #app.run(debug=True) 
-    app.run(debug=False,host="0.0.0.0")
+    app.run(debug=True) 
+    #app.run(debug=False,host="0.0.0.0")
