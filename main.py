@@ -16,7 +16,7 @@ def hello_world():
 def func():
     return "<p>hi bro</p>"
 
-@app.route("/detect_spam/",methods=['POST'])
+@app.route("/detect_spam",methods=['POST'])
 def detect_spam():
     msg=request.get_json();
     msg=dict(msg)
