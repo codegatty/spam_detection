@@ -2,6 +2,7 @@ from flask import Flask,request
 import pickle
 from text_transformer import  text_transformer
 from test import tfidf,model
+import nltk
 
 app = Flask(__name__)
 
@@ -18,6 +19,7 @@ def func():
 
 @app.route("/detect_spam",methods=['POST'])
 def detect_spam():
+    nltk.download('stopwords')
     msg=request.get_json();
     msg=dict(msg)
     res={};
